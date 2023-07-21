@@ -1,0 +1,158 @@
+/* Web Fonts ===================== */
+
+
+/* Base Styles ===================== */
+/*broad changes using CSS type selectors like making headings larger or styling the appearance of text hyperlinks*/
+
+/*Universal style*/
+/** {  box-sizing: border-box;}*/
+/* 20px on most screens */
+/*html {  font-size: 1.25em;}*/
+/* responsive images */
+/*img {  width: 100%;}*/
+
+
+/* Main Styles ===================== */
+/*more specific selectors*/
+
+
+
+
+/* FOOTER */
+
+/*footer-container od Stevena */
+.footer-bottom{
+  box-sizing: border-box;
+  width: 100%;
+  background-color    : #212330;
+  color               : white;
+  border: 1px solid black;
+  font-size: 13px;
+  padding-left: 10px;
+  line-height: 0.7em;
+}
+/*#sitemap do footer-bottom od Stevena (zeby link nie byl domyslnie niebieski i podswietlony) */
+#sitemap{
+color: white;
+padding-left: 5px;
+}
+
+/* Media Queries ================== */
+/*footer-container od Stevena - dlaczego to tak tu jest? */
+@media (min-width: 760px) {
+	.footer-bottom{
+		display: flex;  
+	}
+}
+
+/* Flex Box ================== */
+.Footer_row {
+	display:flex;
+}
+.Footer_Social {
+	display:flex;
+}
+
+.FooterCompanyInfo {
+	display:flex;
+}
+/*
+.Footer_Social{
+    padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 345px;
+} 
+*/ 
+/* ======================================================================================================*/
+
+.Footer_row{
+	background-color    : #333544;
+	width: 100%;
+}
+/* .about-container{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    background-color    : #333544;
+    width: 100%;
+  } */
+  
+==================================================================*/
+
+.newsletter-full-width {
+    background-color: yellow;
+}
+
+.sign-up {
+	background-color: #ddd;
+}
+
+.social_media{
+  color: white;
+}
+/* social media icons lined up horizontaly */
+.about-item{
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.about-h4{
+font-size: 16px;
+margin-left: 10px;
+}
+
+.no-bullet-h4{
+color: white;
+font-size       : 16px;
+margin-left     : 10px;
+}
+
+.no-bullet {
+  list-style-type : none;
+  margin          : 8px;
+  font-size       : 13px;
+  padding         : 0;
+  padding-bottom  : 0px;
+  color           : white;
+  text-decoration : none;
+}
+
+li:hover{
+  text-decoration: underline; 
+}
+
+.socials{
+  /* flex-wrap: wrap; */
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 345px;
+  b
+}
+
+/* to make the images b/w when hovered over */
+.bw-image {
+  padding-left: 5px;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease;
+  }
+
+  .image-1:hover .bw-image{
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+
+  .image-2:hover .bw-image {
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+  .image-3:hover .bw-image {
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+  .image-4:hover .bw-image {
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
