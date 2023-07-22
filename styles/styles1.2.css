@@ -15,12 +15,358 @@
 /* Main Styles ===================== */
 /*more specific selectors*/
 
+/* Welcome section */
+/* welcome Section */
 
 
+.welcome-background-colour{
+  background-color: #333544;
+  width: 100%;
+  
+}
+.welcome{
+  display: inline-block;
+  align-items: center;
+  background-color: #333544;
+  color: #DDDDDD;
+  margin-left: 3vw;
+}
+
+/* At 759px the width becomes fixed */
+@media (min-width:760px){
+  .welc-net p{
+    max-width: 450px;
+    padding-left: 10px;
+  }
+  .what-clients{
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1290px){
+  .welc-net p{
+    max-width: 580px;
+  }
+  .what-clients{
+    max-width: 580px;
+  }
+}
+/* at 99px+ the display becomes a row */
+@media (min-width:990px){
+.welcome{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+} 
+
+  /* Awards image styling */
+  .awards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .awards img{
+    max-width: fit-content;
+    max-width: fit-content;
+    filter: grayscale(100%);
+  }
+  .awards:hover > img{
+    filter: grayscale(0%);
+  }
+
+.welc-net{
+    /* margin-left: 8vw; */
+    padding-right: 12px;
+}
+.welc-net h1{
+  font-size: 36px;
+}
+.welc-net p{
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.what-clients{
+    margin-right: 8vw;
+    padding-left: 12px;
+}
+.what-clients h1{
+  font-size: 36px;
+  line-height: 23px;
+}
+.what-clients p{
+  line-height: 33px;
+  letter-spacing: 0.4px;
+}
+
+.quote-text{
+    color: #A68F78;
+}
+
+.anchor-txt{
+    color: white;
+    text-decoration: none;
+  }
+  .anchor-txt:hover{
+    text-decoration: underline;
+  }
+
+  /* Applied to `why-choose-us` & `our-culture` btns*/
+  .why-choose-us{   
+    color: white;
+    background-color: #252527;
+    padding: 22px;
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 25px;
+  }
+  /* `why-choose-us`  `our-culture` btns :hover*/
+  .why-choose-us:hover{
+    background-color: #121318;
+  }
+
+  .google-rvw-btn{
+    background-color: #4387f6;  
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 25px;
+    margin-top: 20px;
+   }
+   
+   .google-rvw-btn:hover{
+    background-color:#2a6fdf;
+}
+   .trust-rvw-btn{
+    background-color:#00b67b ;
+    color: white;
+    padding: 15px; 
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 0;
+  }
+  
+  .trust-rvw-btn:hover{
+    background-color: #25A25A;
+  }
+
+
+
+
+
+/*  */
+
+/* BAR & Latest News */
+
+.headings-container{
+  display:flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+  .headings-container:hover{
+  text-decoration: none;
+}
+
+/* text + position class="LatestNews"*/
+.LatestNews{
+  font-size: 2.6em;
+  font-weight: 500;
+  margin-left: 5vw;
+  font-weight: bold;
+}
+
+.ViewAll{
+  text-decoration: none;  
+  margin-right: 5vw;
+  font-size: 1.6em;
+  color: black;
+  }
+  .ViewAll:hover{
+  text-decoration: underline;
+  color: black;
+  }
+  .latest-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partial-line{
+    border-top: 1px solid rgb(175, 173, 173);
+    align-self: center;
+    min-width:400px;
+   }
+
+/* Buttons */
+    .btn-1{
+      color: white;
+      background-color:#936FB1;
+      border-radius: 3px;
+      padding:10px;
+      border: none;
+      text-decoration: none;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+    .btn-2{
+      color: white;
+      background-color: #936FB1;
+      border-radius: 3px;
+      padding:10px;
+      border: none;
+      text-decoration: none;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+    .btn-3{
+      color: white;
+      background-color: #936FB1;
+      border-radius: 3px;
+      padding:10px;
+      border: none;
+      text-decoration: none;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+/* TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST */
+/* ###################### SKOPIOWANE NOEW */
+
+
+.card-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25px;
+  
+}
+
+    .article {  /* ========================== card */
+      color: black;
+      min-height: 60vh;
+      max-height: 85vh;
+      max-width:600px;
+      transform: translateY(5px);
+      transition: transform 0.8s ease;
+      margin: 10px;
+      border:1px solid gray;
+      border-radius: 4px;
+    }
+    
+    .article:hover{
+      cursor: pointer;
+      transform: translateY(-5px);
+      transition: transform 0.8s ease;
+    }
+  
+    .article-1{
+      background-image: url(../pics/receptionist-bck.png);
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
+      
+    }
+
+    .article-2{
+      background-image: url(../pics/up-building-bck.png);
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
+     
+     }
+
+     .article-3{
+      background-image: url(../pics/the-green-team-bck.png);
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
+      /* padding-top: 326px;  */
+     }
+
+
+
+
+/* ###################### KONIEC SKOPIOWANE NOEW */
+/* TEST E TEST E TEST E TEST E TEST E TEST E TEST E TEST E TEST E TEST E TEST E TEST E */
+
+/* SECTION CLIENTS */
+.tooltip {
+  position: relative;
+  margin: auto;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  display: inline-block; /* display centered -> block */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -110px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.clients_case_studies_button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  letter-spacing: .4px;
+}
+
+/* Clients section - img grayscale */
+
+.case-studies img{
+  /* max-width:fit-content; */
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+}
+.case-studies:hover > img{
+  filter: grayscale(0%);
+}
+/*--------------------------------------------------------------------------------*/
+/*TUTAJ DZIALAM TERAZ*/
+
+
+.case-studies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+.client-img {
+  display: flex;
+  justify-content: center;
+}
+
+/* .awards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/*--------------------------------------------------------------------------------*/
 
 /* FOOTER */
 
-/*footer-container od Stevena */
+/*footer-container od stfna */
 .footer-bottom{
   box-sizing: border-box;
   width: 100%;
@@ -35,14 +381,6 @@
 #sitemap{
 color: white;
 padding-left: 5px;
-}
-
-/* Media Queries ================== */
-/*footer-container od Stevena - dlaczego to tak tu jest? */
-@media (min-width: 760px) {
-	.footer-bottom{
-		display: flex;  
-	}
 }
 
 /* Flex Box ================== */
@@ -77,7 +415,7 @@ padding-left: 5px;
     width: 100%;
   } */
   
-==================================================================*/
+/* ==================================================================*/
 
 .newsletter-full-width {
     background-color: yellow;
@@ -129,7 +467,6 @@ li:hover{
   padding-left: 20px;
   padding-bottom: 20px;
   width: 345px;
-  b
 }
 
 /* to make the images b/w when hovered over */
@@ -156,3 +493,104 @@ li:hover{
     filter: grayscale(0%);
     cursor: pointer;
   }
+
+  /* =================================================== */
+  /* ================== Media Queries ================== */
+/*footer-container od Stevena - dlaczego to tak tu jest? */
+@media (min-width: 760px) {
+	.footer-bottom{
+		display: flex;  
+	}
+}
+/*MQ - BAR & Latest News */
+
+@media (max-width:759px){
+  .latest-news{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .article-1{
+    padding-top: 320px;
+  }
+  .article-2{
+    padding-top: 320px;
+  }
+  .article-3{
+    padding-top: 320px;
+  }
+ }
+
+ @media (min-width:760px){
+  .latest-news{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .article{
+    width: 330px;
+  }
+  .news3{
+    display: none;
+  }
+  .partial-line{
+    min-width: 260px;
+  }
+  .article-1{
+    padding-top: 200px;
+  }
+  .article-2{
+    padding-top: 200px;
+  }
+  .article-3{
+    padding-top: 200px;
+  }
+ }
+
+ @media (min-width:990px) {
+  
+  .article{
+  width: 440px
+  }
+  .news3{
+    display: none;
+  }
+  .partial-line{
+    min-width: 380px;
+  }
+  .article-1{
+    padding-top: 240px;
+  }
+  .article-2{
+    padding-top: 240px;
+  }
+  .article-3{
+    padding-top: 240px;
+  }
+}
+
+@media(min-width:1275px){
+  .article{
+    width: 380px
+    }
+    .news3{
+      display: block;
+    }
+    .partial-line{
+      min-width: 340px;
+    }
+    .article-1{
+      padding-top: 220px;
+    }
+    .article-2{
+      padding-top: 220px;
+    }
+    .article-3{
+      padding-top: 220px;
+    }
+  }
+/* --------------------------------------------------------- */
+
+  /* ================== Media Queries ================== */
+  /* =================================================== */
