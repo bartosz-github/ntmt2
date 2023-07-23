@@ -20,12 +20,26 @@
   text-align: left;
 } */
 
+
 .UpperHeader-container {
   margin: auto;
   width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
+  display: flex;
+  flex:auto;
+  flex-grow:0;
+  order:0;
+  background-color: #FFFFFF;
+  align-items:center;
 }
+
+.UpperHeader-container > div {
+  background-color: #FFFFFF;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
 
 /* Support button*/
 .btn-support {
@@ -1225,8 +1239,8 @@ li:hover{
         }
         .uh-item-1 {
           flex-basis: 20rem;
-          flex-grow: 1;
-          order: 1;
+          flex-grow: 0; /* 1 */
+          order: 0; /* 1 */
         }
         .uh-item-5 {
           flex-basis: 10rem;
